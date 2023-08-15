@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Integrador - Etapa 1</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid">
+          <!-- /*GENERA SCROLL LATERAL */ -->
+          <a class="navbar-brand" href="#"
+            ><img
+              width="170px"
+              src="./dist/img/enuncumple-celeste-removebg-preview.png"
+              alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  style="color: #ffffff"
+                  aria-current="page"
+                  href="#"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  style="color: #ffffff"
+                  href="pages/nosotros.html"
+                  >Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  style="color: #ffffff"
+                  href="pages/nosotros.html"
+                  >Productos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  style="color: #ffffff"
+                  href="pages/contacto.html"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="d-flex">
+            <a href="pages/carrito.html" class="text-reset me-3"
+              ><i class="fa-solid fa-user fa-lg" style="color: #ffffff"></i
+            ></a>
+            <a href="pages/carrito.html" class="text-reset me-3"
+              ><i
+                class="fa-solid fa-magnifying-glass fa-lg"
+                style="color: #ffffff"
+              ></i
+            ></a>
+            <a href="pages/carrito.html" class="text-reset me-3"
+              ><i
+                class="fa-solid fa-heart fa-beat fa-lg"
+                style="color: #ffffff"
+              ></i
+            ></a>
+            <a href="pages/carrito.html" class="text-reset me-3">
+              <i
+                class="fa-solid fa-cart-shopping fa-lg"
+                style="color: #ffffff"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="img-container position-relative">
+        <div class="opacity" />
+        <div id="uno">
+          <p>EN</p>
+        </div>
+        <div id="dos">
+          <p>UN</p>
+        </div>
+        <div id="tres">
+          <p>CUMPLE!</p>
+        </div>
+        <div
+          class="d-flex justify-content-center align-items-center mx-auto"
+          style="
+            background-color: #22a699;
+            border: 4px solid white;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 100%;
+          "
+        >
+          <a href="#section2"
+            ><i
+              class="fa-solid fa-arrow-down fa-bounce fa-lg"
+              style="color: #ffffff"
+            ></i
+          ></a>
+        </div>
+      </section>
+
+      <section
+        id="section2"
+        class="mt-5 mb-5 container-fluid d-flex flex-wrap justify-content-evenly"
+      >
+        <div
+          class="container-fluid d-flex justify-content-center p-3 destacados rounded-3 mb-3"
+        >
+          <h2>Productos Destacados</h2>
+        </div>
+
+        <div class="card border-danger col-3 m-3">
+          <img
+            src="./public/img/decisiones.jpg"
+            class="card-img-top w-75 object-fit-contain h-75 mx-auto my-0"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title m-0">Decisiones de mierda</h5>
+            <hr />
+            <ul class="list-unestyled mt-3 mb-3 p-0">
+              <li class="list-group-item d-flex align-center jugadores">
+                <i
+                  class="fa-solid fa-user fa-xl mt-2 mx-2"
+                  style="color: #22a699"
+                ></i>
+                <p class="m-0">2 - 4</p>
+              </li>
+              <li class="list-group-item mx-1">Características</li>
+              <li class="list-group-item mx-1">Precio</li>
+            </ul>
+            <a href="#" class="btn btn-card">Comprar</a>
+          </div>
+        </div>
+
+        <!-- card col-3 m-3 -->
+
+        <div class="card border-danger col-3 m-3">
+          <img
+            src="./public/img/destapados.jpg"
+            class="card-img-top w-75 object-fit-contain h-75 mx-auto my-0"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title m-0">En palabras - Destapados</h5>
+            <hr />
+            <ul class="list-unestyled mt-3 mb-3 p-0">
+              <li class="list-group-item d-flex align-center jugadores">
+                <i
+                  class="fa-solid fa-user fa-xl mt-2 mx-2"
+                  style="color: #22a699"
+                ></i>
+                <p class="m-0">+ 2</p>
+              </li>
+              <li class="list-group-item mx-1">Características</li>
+              <li class="list-group-item mx-1">Precio</li>
+            </ul>
+            <a href="#" class="btn btn-card">Comprar</a>
+          </div>
+        </div>
+
+        <div class="card border-danger col-3 m-3">
+          <img
+            src="./public/img/el-melomano.jpg"
+            class="card-img-top w-75 object-fit-contain h-75 mx-auto my-0"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title m-0">El melómano</h5>
+            <hr />
+            <ul class="list-unestyled mt-3 mb-3 p-0">
+              <li class="list-group-item d-flex align-center jugadores">
+                <i
+                  class="fa-solid fa-user fa-xl mt-2 mx-2"
+                  style="color: #22a699"
+                ></i>
+                <p class="m-0">+ 4</p>
+              </li>
+              <li class="list-group-item mx-1">Características</li>
+              <li class="list-group-item mx-1">Precio</li>
+            </ul>
+            <a href="#" class="btn btn-card">Comprar</a>
+          </div>
+        </div>
+
+        <div class="card border-danger col-3 m-3">
+          <img
+            src="./public/img/ni-en-pedo.jpg"
+            class="card-img-top w-75 object-fit-contain h-75 mx-auto my-0"
+            alt="..."
+          />
+          <div class="card-body position-relative">
+            <h5 class="card-title m-0">Ni en Pedo</h5>
+            <hr />
+            <ul class="list-unestyled mt-3 mb-3 p-0">
+              <li class="list-group-item d-flex align-center jugadores">
+                <i
+                  class="fa-solid fa-user fa-xl mt-2 mx-2"
+                  style="color: #22a699"
+                ></i>
+                <p class="m-0">2 - 4</p>
+              </li>
+              <li class="list-group-item mx-1">Características</li>
+              <li class="list-group-item mx-1">Precio</li>
+            </ul>
+            <a href="#" class="btn btn-card">Comprar</a>
+          </div>
+        </div>
+
+        <div class="card border-danger col-3 m-3">
+          <img
+            src="./public/img/con-eso-no.jpg"
+            class="card-img-top w-75 object-fit-contain h-75 mx-auto my-0"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title m-0">Con eso no se jode</h5>
+            <hr />
+            <ul class="list-unestyled mt-3 mb-3 p-0">
+              <li class="list-group-item d-flex align-center jugadores">
+                <i
+                  class="fa-solid fa-user fa-xl mt-2 mx-2"
+                  style="color: #22a699"
+                ></i>
+                <p class="m-0">2 - 4</p>
+              </li>
+              <li class="list-group-item mx-1">Características</li>
+              <li class="list-group-item mx-1">Precio</li>
+            </ul>
+            <a href="#" class="btn btn-card">Comprar</a>
+          </div>
+        </div>
+
+        <div class="card border-danger col-3 m-3">
+          <img
+            src="./public/img/fumany.jpg"
+            class="card-img-top w-75 object-fit-contain h-75 mx-auto my-0"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title m-0">Refumany</h5>
+            <hr />
+            <ul class="list-unestyled mt-3 mb-3 p-0">
+              <li class="list-group-item d-flex align-center jugadores">
+                <i
+                  class="fa-solid fa-user fa-xl mt-2 mx-2"
+                  style="color: #22a699"
+                ></i>
+                <p class="m-0">2 - 4</p>
+              </li>
+              <li class="list-group-item mx-1">Características</li>
+              <li class="list-group-item mx-1">Precio</li>
+            </ul>
+            <a href="#" class="btn btn-card">Comprar</a>
+          </div>
+        </div>
+
+        <div class="card border-danger col-3 m-3">
+          <img
+            src="./public/img/teg.jpg"
+            class="card-img-top w-75 object-fit-contain h-75 mx-auto my-0"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title m-0">T.E.G</h5>
+            <hr />
+            <ul class="list-unestyled mt-3 mb-3 p-0">
+              <li class="list-group-item d-flex align-center jugadores">
+                <i
+                  class="fa-solid fa-user fa-xl mt-2 mx-2"
+                  style="color: #22a699"
+                ></i>
+                <p class="m-0">+ 4</p>
+              </li>
+              <li class="list-group-item mx-1">Características</li>
+              <li class="list-group-item mx-1">Precio</li>
+            </ul>
+            <a href="#" class="btn btn-card">Comprar</a>
+          </div>
+        </div>
+
+        <div class="card border-danger col-3 m-3">
+          <img
+            src="./public/img/t-kabio.jpg"
+            class="card-img-top w-75 object-fit-contain h-75 mx-auto my-0"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title m-0">Tk-bió</h5>
+            <hr />
+            <ul class="list-unestyled mt-3 mb-3 p-0">
+              <li class="list-group-item d-flex align-center jugadores">
+                <i
+                  class="fa-solid fa-user fa-xl mt-2 mx-2"
+                  style="color: #22a699"
+                ></i>
+                <p class="m-0">2 - 4</p>
+              </li>
+              <li class="list-group-item mx-1">Características</li>
+              <li class="list-group-item mx-1">Precio</li>
+            </ul>
+            <a href="#" class="btn btn-card">Comprar</a>
+          </div>
+        </div>
+
+        <div class="card border-danger col-3 m-3">
+          <img
+            src="./public/img/ilustrado.jpg"
+            class="card-img-top w-75 object-fit-contain h-75 mx-auto my-0"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title m-0">El ilustrado</h5>
+            <hr />
+            <ul class="list-unestyled mt-3 mb-3 p-0">
+              <li class="list-group-item d-flex align-center jugadores">
+                <i
+                  class="fa-solid fa-user fa-xl mt-2 mx-2"
+                  style="color: #22a699"
+                ></i>
+                <p class="m-0">2 - 4</p>
+              </li>
+              <li class="list-group-item mx-1">Características</li>
+              <li class="list-group-item mx-1">Precio</li>
+            </ul>
+            <a href="#" class="btn btn-card">Comprar</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-white pt-5 pb-4">
+      <div class="container text-center text-md-start">
+        <div class="row text-center text-md-start">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold">
+              Nosotros
+            </h5>
+            <hr class="mb-4" />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Praesentium similique fugit necessitatibus in, eius inventore
+              doloribus quod fuga totam rerum expedita a deleniti iste,
+              consequatur alias neque quos laboriosam asperiores.
+            </p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold">
+              Dejanos ayudarte
+            </h5>
+            <hr class="mb-4" />
+            <p>
+              <a href="#">Tu cuenta</a>
+            </p>
+            <p>
+              <a href="#">Tus ordenes</a>
+            </p>
+            <p>
+              <a href="#">Manejo de cuenta</a>
+            </p>
+            <p>
+              <a href="#">Ayuda</a>
+            </p>
+          </div>
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold">
+              Haz dinero
+            </h5>
+            <hr class="mb-4" />
+            <p>
+              <a href="#">Vende productos en nuestro sitio</a>
+            </p>
+            <p>
+              <a href="#">Anuncios</a>
+            </p>
+            <p>
+              <a href="#">Afiliate</a>
+            </p>
+            <p>
+              <a href="#">Publica</a>
+            </p>
+          </div>
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-tea-600">
+              Contacto
+            </h5>
+            <hr class="mb-4" />
+            <p>
+              <li class="p-footer fa fa-home me-3">Spiro 65, Adrogue</li>
+            </p>
+            <p>
+              <li class="p-footer fa fa-envelope me-3">m.labarrere2@gmail.com</li>
+            </p>
+            <p>
+              <li class="p-footer fa fa-phone me-3">1131225993</li>
+            </p>
+            <p>
+              <li class="p-footer fa fa-print me-3"> 1131225993</li>
+            </p>
+          </div>
+
+          <hr class="mb-4" />
+
+          <div class="text-center mb-2">
+            <p>
+              Todos los derechos reservados
+              <a href="#"
+                ><strong>Mailen Alvarez</strong></a
+              >
+            </p>
+          </div>
+
+          <div class="txt-center">
+<ul class="list-unstyled list-inline text-center">
+<li class="list-inline-item">
+  <a href="#" class="text-white"><i class="fab fa-facebook"></i></a>
+</li>
+<li class="list-inline-item">
+  <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+</li>
+<li class="list-inline-item">
+  <a href="#" class="text-white"><i class="fab fa-google-plus"></i></a>
+</li>
+<li class="list-inline-item">
+  <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+</li>
+<li class="list-inline-item">
+  <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+</li>
+</ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
