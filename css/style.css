@@ -12,6 +12,18 @@ a {
  color: white;
 }
 
+a:hover {
+  color: #22A699 !important;
+}
+
+i {
+  font-size: 25px;
+}
+
+i:hover {
+  color: #22A699 !important;
+}
+
 footer {
   background-color: #f24C3D;
 }
