@@ -123,7 +123,6 @@ card-img-top {
 
 #about {
   width: 100%;
-  height: 100vh;
   padding: 40px;
 }
 
@@ -140,18 +139,41 @@ card-img-top {
   position: relative;
 }
 
-.firstTopImage {
+.secondImage {
   width: 600px;
-  height: 400px;
-  object-fit: contain;
-  position: absolute;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 38% 62% 26% 74% / 64% 40% 60% 36%;
 }
 
-.secondTopImage {
+@keyframes fadeInFirstImage {
+  from {
+    opacity: 0
+  }
+  to  {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.firstImage {
   width: 600px;
-  height: 400px;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 30% 70% 70% 30% / 30% 37% 63% 70%;
+  opacity: 0;
+  transform: translateX(200px);
+  animation: fadeInFirstImage 0.5s ease-in forwards;
+  animation-delay: 500ms;
+}
+
+@keyframes fadeInFirstBlock {
+  from {
+    opacity: 0
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .content {
@@ -165,12 +187,22 @@ card-img-top {
   padding: 80px 40px;
   border-radius: 12px;
   text-align: center;
+  opacity: 0;
+  transform: translateX(-200px);
+  animation: fadeInFirstBlock 0.5s  ease-in forwards;
+  animation-delay: 500ms;
   > p {
     margin: 0;
   }
 }
 
 .botContent {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin-top: 40px;
 }
 
 .titulo-destacado span {
