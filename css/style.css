@@ -1,5 +1,5 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;800;900&display=swap'); */
-  @import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
 
 * {
   margin: 0;
@@ -9,11 +9,11 @@
 
 a {
   text-decoration: none;
- color: white;
+  color: white;
 }
 
 a:hover {
-  color: #22A699 !important;
+  color: rgb(3, 39, 30) !important;
 }
 
 i {
@@ -21,11 +21,11 @@ i {
 }
 
 i:hover {
-  color: #22A699 !important;
+  color: #22a699 !important;
 }
 
 footer {
-  background-color: #f24C3D;
+  background-color: #f24c3d;
 }
 
 #uno {
@@ -43,19 +43,18 @@ footer {
   z-index: 20;
 }
 
-.custom-inicio{
+.custom-inicio {
   color: white;
 }
 
 .custom-navbar {
-  background-color: #f24C3D; 
+  background-color: #f24c3d;
   overflow: hidden;
 }
 
-
 .img-container {
   position: relative;
-  background-image: url(../dist/img/fondo-index.jpg);
+  background-image: url(../public/img/fondo-index.jpg);
   width: 100%;
   height: 85vh;
   background-size: cover;
@@ -64,7 +63,6 @@ footer {
   justify-content: center;
   flex-direction: column;
 
- 
   /* filter: blur(5px); */
 }
 
@@ -76,28 +74,25 @@ footer {
   backdrop-filter: blur(2px);
 }
 
-
 .img-container div p {
   letter-spacing: 2px;
-  font-family: 'Caprasimo', cursive;
+  font-family: "Caprasimo", cursive;
   /* font-weight: 800; */
   font-size: 7.5rem;
   margin-top: 1rem;
   color: white;
   /* Aplicar un borde negro a las letras de un elemento <p> */
   /* -webkit-text-stroke: 4px black; Borde negro de 1 píxel (ajusta según tus preferencias) */
- 
 }
 
 .destacados {
-  background-color: #22A699;
+  background-color: #22a699;
   color: white;
   letter-spacing: 2px;
 }
 
 .card {
   box-shadow: ;
-
 }
 
 card-img-top {
@@ -106,45 +101,80 @@ card-img-top {
 }
 
 .btn-card {
-color: white;
-background-color: #f24C3D;
+  color: white;
+  background-color: #f24c3d;
 }
 
 .btn-card:hover {
-  background-color: #22A699;
+  background-color: #22a699;
   color: white;
 }
 
 .card-title {
-  color: #f24C3D;
+  color: #f24c3d;
 }
 
 .p-footer {
   font-size: 12px;
   letter-spacing: 2px;
- 
 }
 
+/* !Estilos Nosotros!*/
 
+#about {
+  width: 100%;
+  height: 100vh;
+  padding: 40px;
+}
 
+.topContent {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
+.topImagesWrapper {
+  width: auto;
+  display: flex;
+  position: relative;
+}
 
+.firstTopImage {
+  width: 600px;
+  height: 400px;
+  object-fit: contain;
+  position: absolute;
+}
 
+.secondTopImage {
+  width: 600px;
+  height: 400px;
+  object-fit: contain;
+  border-radius: 30% 70% 70% 30% / 30% 37% 63% 70%;
+}
 
+.content {
+  width: 100%;
+  max-width: 600px;
+  background-color: #f24c3d;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 40px;
+  border-radius: 12px;
+  text-align: center;
+  > p {
+    margin: 0;
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
+.botContent {
+}
 
 .titulo-destacado span {
-color: red;
+  color: red;
 }
 
 .nosotros-iconos {
@@ -155,7 +185,7 @@ color: red;
   margin-right: 0.8em;
   padding: 0;
   color: #323232;
-  box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
 .nosotros-iconos li {
@@ -166,17 +196,17 @@ color: red;
 
 .nosotros-iconos i.fb:hover {
   color: rgb(37, 22, 240);
-  transition: all .6s;
+  transition: all 0.6s;
 }
 
 .nosotros-iconos i.tw:hover {
   color: rgb(83, 151, 239);
-  transition: all .6s;
+  transition: all 0.6s;
 }
 
 .nosotros-iconos i.ig:hover {
   color: rgb(203, 19, 123);
-  transition: all .6s;
+  transition: all 0.6s;
 }
 
 /* CARRITO */
@@ -184,4 +214,3 @@ color: red;
 .tarjetas img {
   width: 65px;
 }
-
