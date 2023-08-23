@@ -5,14 +5,17 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 /* Archivos de proyecto*/
 import "./css/style.css";
 import { games } from "./utils/games";
+import { values } from "./utils/values";
 
+const cardsContainer = document.getElementById("cardsContainer");
+const valuesWrapper = document.getElementById("valuesWrapper");
 
-window.addEventListener("load", () => {
-    const cardsContainer = document.getElementById("cardsContainer")
-
-    const renderCards = () => {
-        cardsContainer.innerHTML = games.map((game) => {
-            return `<div class="card shadow-lg border-danger col-3 m-3">
+const renderCards = () => {
+  console.log(valuesWrapper)
+  console.log(values)
+  cardsContainer.innerHTML = games
+    .map((game) => {
+      return `<div class="card shadow-lg border-danger col-3 m-3">
             <img
               src="${game.image}"
               class="card-img-top w-75 object-fit-contain h-75 mx-auto my-0"
@@ -40,12 +43,22 @@ window.addEventListener("load", () => {
                 Ver Más
               </a>
             </div>
-          </div>`
-        }).join("")
-    };
-    
-    
-    renderCards()
-})
+          </div>`;
+    })
+    .join("");
+};
 
+const renderValues = () => {
+  valuesWrapper.innerHTML = values
+    .map((value) => {
+      return `<div class="value">
+        <i class="${value.icon}"></i>
+        <h3 class="valueTitle">${value.title}</h3>
+        <p class="valueText">${value.description}</p>
+      </div>`;
+    })
+    .join("");
+};
 
+renderCards();
+renderValues();

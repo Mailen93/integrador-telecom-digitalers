@@ -285,3 +285,38 @@ npm outdated: Me permite chequear con respecto al repositorio de npmjs, si hay u
             <a href="#" class="btn btn-card">Comprar</a>
           </div>
         </div>
+
+
+        ABOUT US 
+
+              <section id="about">
+        <div class="topContent">
+          <div class="content">
+            <p>
+              ¿QUIEN NO HA JUGADO JUEGOS DE MESA DE PEQUEÑO? SOMOS UNA EMPRESA
+              CONVENCIDA DE QUE PODEMOS CONTINUAR CON LA DIVERSION MAS ALLA DE
+              LAS EDADES. PARA AQUELLOS AMANTES NOSTALGICOS DEL CALIDO ENCUENTRO
+              HUMANO DECIDIMOS CREAR UN ESPACIO...
+            </p>
+          </div>
+          <div class="topImagesWrapper">
+            <img src="../public/img/us2.jpg" alt="" class="firstImage" />
+          </div>
+        </div>
+
+        
+        <div class="botContent">
+          <div class="content"> 
+            <p>
+              ¿QUIEN NO HA JUGADO JUEGOS DE MESA DE PEQUEÑO? SOMOS UNA EMPRESA
+              CONVENCIDA DE QUE PODEMOS CONTINUAR CON LA DIVERSION MAS ALLA DE
+              LAS EDADES. PARA AQUELLOS AMANTES NOSTALGICOS DEL CALIDO ENCUENTRO
+              HUMANO DECIDIMOS CREAR UN ESPACIO...
+            </p>
+          </div>
+          <div class="topImagesWrapper">
+            <img src="../public/img/us3.jpg" alt="" class="secondImage" />
+          </div>
+        </div>
+        </div>
+      </section>

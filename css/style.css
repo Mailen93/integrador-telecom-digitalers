@@ -21,7 +21,7 @@ i {
 }
 
 i:hover {
-  color: #22a699 !important;
+  color: rgb(3, 39, 30) !important;
 }
 
 footer {
@@ -110,6 +110,10 @@ card-img-top {
   color: white;
 }
 
+.btn-dark:hover {
+  color:gainsboro !important;
+}
+
 .card-title {
   color: #f24c3d;
 }
@@ -121,10 +125,117 @@ card-img-top {
 
 /* !Estilos Nosotros!*/
 
-#about {
+#hero {
   width: 100%;
-  padding: 40px;
+  padding: 20px 20px 0;
 }
+
+.heroMainContainer {
+  width: 100%;
+  border-radius: 90px;
+  background-color: #F29727;
+  display: flex;
+  justify-content: center;
+  padding-top: 108px;
+  letter-spacing: -1px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroTitle {
+  width: 90%;
+  max-width: 1000px;
+  text-align: center;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 80px;
+  color: white;
+}
+
+.heroImageContainer {
+  width: 100%;
+  margin-top: -100px;
+}
+
+.heroImage {
+  width: 100%;
+  object-fit: contain;
+}
+
+#values {
+  width: 100%;
+  padding: 0 25px;
+}
+
+.valuesContainer {
+  width: 100%;
+  background-color: #22a699;
+  border-radius: 90px;
+  margin: 20px 0;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 84px 0;
+}
+
+.valuesTitleContainer {
+  width: 90%;
+  max-width: 740px;
+}
+
+.valuesTitle {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 64px;
+}
+
+.valuesSubTitle {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 45px;
+}
+
+#valuesWrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.value {
+  width: 100%;
+  max-width: 320px;
+  padding: 20px 12px;
+  background-color: #F29727;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  box-shadow: 7px 8px 0 black;
+  transition: all ease-in-out .2s;
+  >p {
+    margin: 0;
+  }
+}
+
+.value:hover {
+  box-shadow: none;
+}
+
+
+
+
 
 .topContent {
   width: 100%;
@@ -132,6 +243,8 @@ card-img-top {
   justify-content: space-evenly;
   align-items: center;
 }
+
+
 
 .topImagesWrapper {
   width: auto;
