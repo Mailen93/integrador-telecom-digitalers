@@ -239,7 +239,7 @@ card-img-top {
 
 #nostalgic {
   width: 100%;
-padding: 0 20px 20px;
+  padding: 0 20px 20px;
 }
 
 .nostalgicContainer {
@@ -281,4 +281,50 @@ padding: 0 20px 20px;
 
 .tarjetas img {
   width: 65px;
+}
+
+/* CONTACTO */
+
+.contactContainer {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 600px;
+  background-color: #f29727;
+  padding: 24px;
+  margin: 0 auto;
+  border-radius: 16px;
+}
+
+.formTitle {
+  text-align: center;
+  color: white;
+  font-family: "Mulish";
+  margin-bottom: 16px;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  gap: 11px;
+  > label {
+    color: white;
+    font-family: "Mulish";
+  }
+  > button {
+    width: auto;
+    padding: 4px 8px;
+    margin: 10px auto 0;
+    border-radius: 8px;
+    background-color: #22a699;
+    color: white;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
 }
