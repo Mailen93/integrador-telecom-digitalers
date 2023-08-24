@@ -1,5 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;800;900&display=swap'); */
-@import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700&display=swap");
 
 * {
   margin: 0;
@@ -77,8 +76,8 @@ footer {
 .img-container div p {
   letter-spacing: 2px;
   font-family: "Caprasimo", cursive;
-  /* font-weight: 800; */
-  font-size: 7.5rem;
+  font-weight: 800;
+  font-size: 7rem;
   margin-top: 1rem;
   color: white;
   /* Aplicar un borde negro a las letras de un elemento <p> */
@@ -111,7 +110,7 @@ card-img-top {
 }
 
 .btn-dark:hover {
-  color:gainsboro !important;
+  color: gainsboro !important;
 }
 
 .card-title {
@@ -133,7 +132,7 @@ card-img-top {
 .heroMainContainer {
   width: 100%;
   border-radius: 90px;
-  background-color: #F29727;
+  background-color: #f29727;
   display: flex;
   justify-content: center;
   padding-top: 108px;
@@ -151,7 +150,8 @@ card-img-top {
   max-width: 1000px;
   text-align: center;
   font-size: 64px;
-  font-weight: 600;
+  font-family: "Mulish", sans-serif;
+  font-weight: 900;
   line-height: 80px;
   color: white;
 }
@@ -190,21 +190,23 @@ card-img-top {
 }
 
 .valuesTitle {
+  font-family: "Mulish", sans-serif;
   font-size: 56px;
   font-weight: 700;
   line-height: 64px;
 }
 
 .valuesSubTitle {
+  font-family: "Mulish", sans-serif;
   font-size: 32px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 45px;
 }
 
 #valuesWrapper {
   width: 100%;
   max-width: 1000px;
-  margin-top: 40px;
+  margin: 40px 0;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -215,7 +217,7 @@ card-img-top {
   width: 100%;
   max-width: 320px;
   padding: 20px 12px;
-  background-color: #F29727;
+  background-color: #f29727;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -223,9 +225,11 @@ card-img-top {
   justify-content: center;
   gap: 4px;
   box-shadow: 7px 8px 0 black;
-  transition: all ease-in-out .2s;
-  >p {
+  transition: all ease-in-out 0.2s;
+  > p {
     margin: 0;
+    font-family: "Mulish";
+    font-size: 18px;
   }
 }
 
@@ -233,125 +237,44 @@ card-img-top {
   box-shadow: none;
 }
 
+#nostalgic {
+  width: 100%;
+padding: 0 20px 20px;
+}
 
-
-
-
-.topContent {
+.nostalgicContainer {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  background-color: #f29727;
+  border-radius: 90px;
   align-items: center;
-}
-
-
-
-.topImagesWrapper {
-  width: auto;
-  display: flex;
-  position: relative;
-}
-
-.secondImage {
-  width: 600px;
-  height: 500px;
-  object-fit: cover;
-  border-radius: 38% 62% 26% 74% / 64% 40% 60% 36%;
-}
-
-@keyframes fadeInFirstImage {
-  from {
-    opacity: 0
-  }
-  to  {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.firstImage {
-  width: 600px;
-  object-fit: cover;
-  border-radius: 30% 70% 70% 30% / 30% 37% 63% 70%;
-  opacity: 0;
-  transform: translateX(200px);
-  animation: fadeInFirstImage 0.5s ease-in forwards;
-  animation-delay: 500ms;
-}
-
-@keyframes fadeInFirstBlock {
-  from {
-    opacity: 0
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.content {
-  width: 100%;
-  max-width: 600px;
-  background-color: #f24c3d;
-  color: white;
-  display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 80px 40px;
-  border-radius: 12px;
-  text-align: center;
-  opacity: 0;
-  transform: translateX(-200px);
-  animation: fadeInFirstBlock 0.5s  ease-in forwards;
-  animation-delay: 500ms;
-  > p {
-    margin: 0;
-  }
+  min-height: 400px;
 }
 
-.botContent {
-  width: 100%;
+.textAndImageContainer {
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
-  flex-direction: row-reverse;
-  margin-top: 40px;
+  gap: 2rem;
+  width: 100%;
+  max-width: 950px;
 }
 
-.titulo-destacado span {
-  color: red;
+.nostalgicText {
+  color: white;
+  font-family: "Mulish";
+  font-weight: 800;
+  font-size: 18px;
+  border: 3px solid white;
+  border-radius: 20px;
+  padding: 1rem;
+  background-color: #22a699;
 }
 
-.nosotros-iconos {
-  margin: 3em 0;
-}
-
-.nosotros-iconos i {
-  margin-right: 0.8em;
-  padding: 0;
-  color: #323232;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-}
-
-.nosotros-iconos li {
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-}
-
-.nosotros-iconos i.fb:hover {
-  color: rgb(37, 22, 240);
-  transition: all 0.6s;
-}
-
-.nosotros-iconos i.tw:hover {
-  color: rgb(83, 151, 239);
-  transition: all 0.6s;
-}
-
-.nosotros-iconos i.ig:hover {
-  color: rgb(203, 19, 123);
-  transition: all 0.6s;
+.nostalgicImage {
+  width: 350px;
+  object-fit: contain;
+  border-radius: 20px;
 }
 
 /* CARRITO */

@@ -8,13 +8,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/style.css" async />
+    <link rel="stylesheet" href="./css/style.css" async />
   </head>
 
   <body>
     <header>
       <nav class="navbar navbar-expand-lg custom-navbar">
         <div class="container-fluid">
+          <!-- /*GENERA SCROLL LATERAL */ -->
           <a class="navbar-brand" href="#"
             ><img width="170px" src="../public/img/logo.png" alt="logo"
           /></a>
@@ -36,7 +37,7 @@
                   class="nav-link active"
                   style="color: #ffffff"
                   aria-current="page"
-                  href="/index.html"
+                  href="#"
                   >Inicio</a
                 >
               </li>
@@ -44,7 +45,7 @@
                 <a
                   class="nav-link"
                   style="color: #ffffff"
-                  href="/pages/nosotros.html"
+                  href="./pages/nosotros.html"
                   >Nosotros</a
                 >
               </li>
@@ -72,7 +73,7 @@
                 <input
                   class="form-control me-2"
                   type="search"
-                  placeholder="Buscar"
+                  placeholder="Search"
                   aria-label="Search"
                 />
                 <button class="btn" type="submit">
@@ -103,43 +104,43 @@
     </header>
 
     <main>
-      <section id="hero">
-        <div class="heroMainContainer">
-          <h1 class="heroTitle">
-            Porque conservamos el amor por un buen juego de mesa
-          </h1>
-          <div class="heroImageContainer">
-            <img
-              src="../public/img/nosotrosHero.png"
-              alt=""
-              class="heroImage"
-            />
-          </div>
-        </div>
-      </section>
 
-      <section id="values">
-        <div class="valuesContainer">
-          <div class="valuesTitleContainer">
-            <h2 class="valuesTitle">Unite a nuestra hermosa comunidad</h2>
-            <h4 class="valuesSubTitle">Conocé nuestros valores</h4>
-          </div>
-          <div id="valuesWrapper"></div>
+      <section
+        id="section2"
+        class="mt-5 mb-5 container-fluid d-flex flex-wrap justify-content-evenly"
+      >
+        <div
+          class="container-fluid d-flex justify-content-center p-3 destacados rounded-3 mb-3"
+        >
+          <h2>Nuevos Ingresos</h2>
         </div>
-      </section>
 
-      <section id="nostalgic">
-        <div class="nostalgicContainer">
-          <div class="textAndImageContainer">
-            <p class="nostalgicText">
-              ¿QUIÉN NO HA JUGADO JUEGOS DE MESA DE PEQUEÑO? SOMOS UNA EMPRESA
-              CONVENCIDA DE QUE PODEMOS CONTINUAR CON LA DIVERSIÓN MÁS ALLÁ DE LAS
-              EDADES. PARA AQUELLOS AMANTES NOSTÁLGICOS DEL CÁLIDO ENCUENTRO
-              HUMANO DECIDIMOS CREAR UN ESPACIO ATEMPORAL DONDE......
-            </p>
-            <img class="nostalgicImage" src="../public/img/us2.jpg" alt="" />
-          </div>
+        <div
+          id="newsContainer"
+          class="container-fluid d-flex flex-wrap justify-content-evenly mt-5 mb-5"
+        ></div>
+
+        <div
+          class="container-fluid d-flex justify-content-center p-3 destacados rounded-3 mb-3"
+        >
+          <h2>Ofertas</h2>
         </div>
+
+        <div
+          id="offersContainer"
+          class="container-fluid d-flex flex-wrap justify-content-evenly mt-5 mb-5"
+        ></div>
+
+        <div
+          class="container-fluid d-flex justify-content-center p-3 destacados rounded-3 mb-3"
+        >
+          <h2>Todos los productos</h2>
+        </div>
+
+        <div
+          id="allProductsContainer"
+          class="container-fluid d-flex flex-wrap justify-content-evenly mt-5 mb-5"
+        ></div>
       </section>
     </main>
 
@@ -266,105 +267,6 @@
       </div>
     </footer>
 
-    <script type="module" src="/nosotros.js"></script>
+    <script type="module" src="/productos.js"></script>
   </body>
 </html>
-
-<!-- 
-
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <title>Proyecto Integrador - Etapa 1 (Nosostros)</title>
-    <script type="module" crossorigin src="/assets/carrito-3cd92934.js"></script>
-    <link rel="stylesheet" href="/assets/carrito-7100db76.css">
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Tienda EIT</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="../index.html"
-                  >Inicio</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contacto.html">Contacto</a>
-              </li>
-            </ul>
-          </div>
-          <div class="d-flex">
-            <a href="carrito.html" class="text-reset me-3">
-              <i class="fa-solid fa-cart-shopping"></i>
-            </a>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <main class="container nosotros">
-      <div class="row">
-        <div class="col-7">
-          <h1 class="titulo-destacado">Sobre <span>nosotros</span></h1>
-          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste
-            obcaecati harum fugiat, eius possimus animi adipisci velit non
-            similique dolorem.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-            ipsa, corrupti nam eveniet odit excepturi adipisci provident. Iusto,
-            fugit doloremque.
-          </p>
-          <div class="nosotros-iconos">
-            <ul>
-                <li><a href="https://facebook.com"><i class="fb fa-brands fa-facebook-square fa-3x"></i></a></li>
-                <li><a href="https://twitter.com"><i class="tw fa-brands fa-twitter-square fa-3x"></i></a></li>
-                <li><a href="https://instagram.com"><i class="ig fa-brands fa-instagram-square fa-3x"></i></a></li>
-                <li><a href="mailto:m.labarrere2@gmail.com"><i class="fa-solid fa-envelope-square fa-3x"></i></a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-5">
-          <div class="nosotros-imagen">
-            <img
-              class="img-fluid"
-              src="/assets/sean-stratton-ObpCE_X3j6U-unsplash-a3de3d22.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-    </main>
-
-    
-  </body>
-</html> -->

@@ -5,14 +5,10 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 /* Archivos de proyecto*/
 import "./css/style.css";
 import { games } from "./utils/games";
-import { values } from "./utils/values";
 
 const cardsContainer = document.getElementById("cardsContainer");
-const valuesWrapper = document.getElementById("valuesWrapper");
 
 const renderCards = () => {
-  console.log(valuesWrapper)
-  console.log(values)
   cardsContainer.innerHTML = games
     .map((game) => {
       return `<div class="card shadow-lg border-danger col-3 m-3">
@@ -48,17 +44,5 @@ const renderCards = () => {
     .join("");
 };
 
-const renderValues = () => {
-  valuesWrapper.innerHTML = values
-    .map((value) => {
-      return `<div class="value">
-        <i class="${value.icon}"></i>
-        <h3 class="valueTitle">${value.title}</h3>
-        <p class="valueText">${value.description}</p>
-      </div>`;
-    })
-    .join("");
-};
-
 renderCards();
-renderValues();
+
