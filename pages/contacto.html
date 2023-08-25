@@ -11,11 +11,11 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg custom-navbar">
+      <nav class="navbar navbar-expand-lg custom-navbar contact-navbar">
         <div class="container-fluid">
           <!-- /*GENERA SCROLL LATERAL */ -->
           <a class="navbar-brand" href="#"
-            ><img width="170px" src="./public/img/logo.png" alt="logo"
+            ><img width="170px" src="/img/logo.png" alt="logo"
           /></a>
           <button
             class="navbar-toggler"
@@ -35,7 +35,7 @@
                   class="nav-link active"
                   style="color: #ffffff"
                   aria-current="page"
-                  href="#"
+                  href="../index.html"
                   >Inicio</a
                 >
               </li>
@@ -43,7 +43,7 @@
                 <a
                   class="nav-link"
                   style="color: #ffffff"
-                  href="./pages/nosotros.html"
+                  href="./nosotros.html"
                   >Nosotros</a
                 >
               </li>
@@ -51,7 +51,7 @@
                 <a
                   class="nav-link"
                   style="color: #ffffff"
-                  href="pages/nosotros.html"
+                  href="./productos.html"
                   >Productos</a
                 >
               </li>
@@ -59,7 +59,7 @@
                 <a
                   class="nav-link"
                   style="color: #ffffff"
-                  href="pages/contacto.html"
+                  href="#"
                   >Contacto</a
                 >
               </li>
@@ -101,18 +101,44 @@
       </nav>
     </header>
 
-    <div class="contactContainer">
-      <h2 class="formTitle">¿Cómo podemos ayudarte?</h2>
-      <form id="contact" action="">
-        <label for="name">Nombre Completo</label>
-        <input name="name" type="text" />
-        <label for="email">Email</label>
-        <input name="email" type="email" />
-        <label for="message">Mensaje</label>
-        <input name="message" type="text" />
-        <button type="submit">Enviar</button>
-      </form>
-    </div>
+    <section id="contactSection">
+      <div class="contactContainer">
+        <div class="bubblesWrapper">
+          <div class="bubleContainer">
+            <i class="fa-solid fa-comment-dots"></i>
+            <p>Escribinos</p>
+            <p>enuncumple@gmail.com</p>
+          </div>
+          <div class="bubleContainer">
+            <i class="fa-solid fa-phone"></i>
+            <p>Llamanos</p>
+            <p>(+549)1131225993</p>
+          </div>
+          <div class="bubleContainer">
+            <i class="fa-solid fa-map"></i>
+            <p>Contactanos</p>
+            <p>Spiro 65 Adrogué, Bs. As</p>
+          </div>
+        </div>
+
+        <div class="formContainer">
+          <h2 class="formTitle">¿Cómo podemos ayudarte?</h2>
+          <form class="contactForm" action="">
+            <label for="name">Nombre Completo</label>
+            <input name="name" type="text" />
+            <label for="email">Email</label>
+            <input name="email" type="email" />
+            <label for="message">Mensaje</label>
+            <input name="message" type="text" />
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="contactImageContainer">
+        <img src="../public/img/contact.jpg" alt="" />
+      </div>
+    </section>
 
     <script type="module" src="/contacto.js"></script>
   </body>
