@@ -5,8 +5,8 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 /* Archivos de proyecto*/
 import "./css/style.css";
 import { games } from "./utils/games";
+import { cart } from "./utils/cart";
 
-const cart = []
 /// HTML ELEMENTS ///
 
 const newsContainer = document.getElementById("newsContainer");

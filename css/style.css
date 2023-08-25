@@ -287,7 +287,7 @@ card-img-top {
 .nostalgicText {
   color: white;
   font-family: "Mulish";
-  font-weight: 800;
+  font-weight: 700;
   font-size: 18px;
   border: 3px solid white;
   border-radius: 20px;
@@ -474,7 +474,19 @@ card-img-top {
   }
 }
 
+
+/* CHECKOUT */
+
 #checkout {
   width: 100%;
   height: 100vh;
+}
+
+.checkoutTitle {
+background-color: #f29727;
+}
+
+
+.tarjetas {
+
 }
