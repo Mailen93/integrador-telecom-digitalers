@@ -484,9 +484,16 @@ card-img-top {
 
 .checkoutTitle {
 background-color: #f29727;
+color: white;
 }
 
+.headerCheckOut {
+  letter-spacing: 1px;
+  font-family: 'Mulish';
+}
 
 .tarjetas {
-
+>img {
+  width: 70px;
+}
 }
