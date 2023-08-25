@@ -303,9 +303,62 @@ card-img-top {
 
 /* CARRITO */
 
-.tarjetas img {
-  width: 65px;
+/* Estilos para el Carrito Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
 }
+
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#cartItemsList {
+  list-style: none;
+  padding: 0;
+}
+
+#cartItemsList li {
+  margin-bottom: 10px;
+}
+
+#cartTotal {
+  font-weight: bold;
+}
+
+#checkoutButton {
+  background-color: #22a699;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+#checkoutButton:hover {
+  background-color: #f24c3d;
+}
+
 
 /* CONTACTO */
 
@@ -421,3 +474,7 @@ card-img-top {
   }
 }
 
+#checkout {
+  width: 100%;
+  height: 100vh;
+}

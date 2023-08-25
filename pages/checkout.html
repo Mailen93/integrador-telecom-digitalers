@@ -1,16 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>En un cumple!</title>
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/style.css" async />
+    <title>En un cumple</title>
   </head>
-
   <body>
     <header>
       <nav class="navbar navbar-expand-lg custom-navbar">
@@ -83,73 +77,29 @@
             <a href="pages/carrito.html" class="text-reset me-3"
               ><i class="fa-solid fa-user fa-lg" style="color: #ffffff"></i
             ></a>
-            <a href="#"  class="text-reset me-3"
+            <a href="pages/carrito.html" class="text-reset me-3"
               ><i
                 class="fa-solid fa-heart fa-beat fa-lg"
                 style="color: #ffffff"
               ></i>
             </a>
-            <a id="cart" class="text-reset me-3">
+            <button id='cart' class="text-reset me-3">
               <i
                 class="fa-solid fa-cart-shopping fa-lg"
                 style="color: #ffffff"
               ></i>
-            </a>
+            </button>
           </div>
         </div>
       </nav>
     </header>
 
     <main>
-      <section
-        id="section2"
-        class="mt-5 mb-5 container-fluid d-flex flex-wrap justify-content-evenly"
-      >
-        <div id="cartModal" class="modal">
-          <div class="modal-content">
-            <span class="close-button">&times;</span>
-            <h2>Carrito de Compras</h2>
-            <ul id="cartItemsList"></ul>
-            <p>Total: $<span id="cartTotal">0</span></p>
-            <a id="checkoutButton" href="./checkout.html">Finalizar Compra</a>
-          </div>
-        </div>
-        <div
-          class="container-fluid d-flex justify-content-center p-3 destacados rounded-3 mb-3"
-        >
-          <h2>Nuevos Ingresos</h2>
-        </div>
+        <section id="checkout">
 
-        <div
-          id="newsContainer"
-          class="container-fluid d-flex flex-wrap justify-content-evenly mt-5 mb-5"
-        ></div>
-
-        <div
-          class="container-fluid d-flex justify-content-center p-3 destacados rounded-3 mb-3"
-        >
-          <h2>Ofertas</h2>
-        </div>
-
-        <div
-          id="offersContainer"
-          class="container-fluid d-flex flex-wrap justify-content-evenly mt-5 mb-5"
-        ></div>
-
-        <div
-          class="container-fluid d-flex justify-content-center p-3 destacados rounded-3 mb-3"
-        >
-          <h2>Todos los productos</h2>
-        </div>
-
-        <div
-          id="allProductsContainer"
-          class="container-fluid d-flex flex-wrap justify-content-evenly mt-5 mb-5"
-        ></div>
-      </section>
+        </section>
     </main>
 
-    <!-- Footer -->
     <footer class="text-white pt-5 pb-4">
       <div class="container text-center text-md-start">
         <div class="row text-center text-md-start">
@@ -183,21 +133,21 @@
           </div>
 
           <!-- <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-            <h5 class="text-uppercase mb-4 font-weight-bold">Haz dinero</h5>
-            <hr class="mb-4" />
-            <p>
-              <a href="#">Vende productos en nuestro sitio</a>
-            </p>
-            <p>
-              <a href="#">Anuncios</a>
-            </p>
-            <p>
-              <a href="#">Afiliate</a>
-            </p>
-            <p>
-              <a href="#">Publica</a>
-            </p>
-          </div> -->
+              <h5 class="text-uppercase mb-4 font-weight-bold">Haz dinero</h5>
+              <hr class="mb-4" />
+              <p>
+                <a href="#">Vende productos en nuestro sitio</a>
+              </p>
+              <p>
+                <a href="#">Anuncios</a>
+              </p>
+              <p>
+                <a href="#">Afiliate</a>
+              </p>
+              <p>
+                <a href="#">Publica</a>
+              </p>
+            </div> -->
 
           <div class="col-md-2 col-lg-3 col-xl-3 mx-auto mt-3">
             <h5 class="text-uppercase mb-4 font-weight-bold text-tea-600">
@@ -230,7 +180,7 @@
             ></iframe>
           </div>
           <!-- 
-          <hr class="mb-4" /> -->
+            <hr class="mb-4" /> -->
 
           <div class="text-center mb-2">
             <p>
@@ -271,7 +221,6 @@
         </div>
       </div>
     </footer>
-
-    <script type="module" src="/productos.js"></script>
+    <script type="module" src="/checkout.js"></script>
   </body>
 </html>
