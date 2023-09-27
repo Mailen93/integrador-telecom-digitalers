@@ -23,7 +23,7 @@ const updateCartUI = () => {
   console.log(cartTotal)
 
   cartItemsList.innerHTML = cart.map((product) => {
-    return `<li>${product.name} - AR$ ${product.price}</li>`
+    return `<li><img class="product-image-cart" src=${product.image} /> ${product.name} - AR$ ${product.price}</li>`
   }).join("")
 
   const total = cart.reduce((acc, product) => acc + parseFloat(product.price), 0)
