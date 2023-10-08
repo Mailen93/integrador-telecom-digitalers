@@ -8,7 +8,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" async />
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
 
   <body>
@@ -109,10 +109,12 @@
           <div class="modal-content">
             <span class="close-button">&times;</span>
             <h2>Carrito de Compras</h2>
-            <ul id="cartItemsList"></ul>
+            <ul id="cartItemsList">
+             
+            </ul>
             <p>Total: $<span id="cartTotal">0</span></p>
             <a id="checkoutButton" href="./checkout.html">Finalizar Compra</a>
-            <a id="vaciarCarritoButton" href="./checkout.html">Vaciar carrito</a>
+            <a id="vaciarCarritoButton" >Vaciar carrito</a>
           </div>
         </div>
         <div
@@ -120,12 +122,10 @@
         >
           <h2>Nuevos Ingresos</h2>
         </div>
-
         <div
           id="newsContainer"
           class="container-fluid d-flex flex-wrap justify-content-evenly mt-5 mb-5"
         ></div>
-
         <div
           class="container-fluid d-flex justify-content-center p-3 destacados rounded-3 mb-3"
         >
@@ -257,5 +257,6 @@
     </footer>
 
     <script type="module" src="/productos.js"></script>
+    <script type="module" src="../utils/cart.js"></script>
   </body>
 </html>

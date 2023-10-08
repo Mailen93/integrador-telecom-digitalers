@@ -68,7 +68,7 @@
             </ul>
           </div>
           <div class="d-flex align-items-center">
-            <a href="pages/carrito.html" class="text-reset me-3">
+            <a href="#" class="text-reset me-3">
               <form class="d-flex">
                 <input
                   class="form-control me-2"
@@ -83,16 +83,16 @@
                   ></i>
                 </button></form
             ></a>
-            <a href="pages/carrito.html" class="text-reset me-3"
+            <a href="#" class="text-reset me-3"
               ><i class="fa-solid fa-user fa-lg" style="color: #ffffff"></i
             ></a>
-            <a href="pages/carrito.html" class="text-reset me-3"
+            <a href="#" class="text-reset me-3"
               ><i
                 class="fa-solid fa-heart fa-beat fa-lg"
                 style="color: #ffffff"
               ></i>
             </a>
-            <a href="pages/carrito.html" class="text-reset me-3">
+            <a id="cart" class="text-reset me-3">
               <i
                 class="fa-solid fa-cart-shopping fa-lg"
                 style="color: #ffffff"
@@ -104,6 +104,16 @@
     </header>
 
     <main>
+      <div id="cartModal" class="modal">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <h2>Carrito de Compras</h2>
+          <ul id="cartItemsList"></ul>
+          <p>Total: $<span id="cartTotal">0</span></p>
+          <a id="checkoutButton" href="./checkout.html">Finalizar Compra</a>
+          <a id="vaciarCarritoButton" href="./checkout.html">Vaciar carrito</a>
+        </div>
+      </div>
       <section class="img-container position-relative">
         <div class="opacity" />
         <div id="uno">
@@ -163,7 +173,8 @@
               risa y la camaradería en la era digital actual. Nuestro objetivo
               es ofrecerte una amplia gama de juegos de mesa diseñados
               especialmente para adultos, que te permitirán desconectar de las
-              pantallas y sumergirte en experiencias de juego auténticas e inolvidables.
+              pantallas y sumergirte en experiencias de juego auténticas e
+              inolvidables.
             </p>
           </div>
           <div class="col-md-2 col-lg-3 col-xl-3 mx-auto mt-3">
@@ -257,5 +268,6 @@
     </footer>
 
     <script type="module" src="/main.js"></script>
+    <script type="module" src="./utils/cart.js"></script>
   </body>
 </html>

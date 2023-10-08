@@ -5,42 +5,14 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 /* Archivos de proyecto*/
 import "./css/style.css";
 import { games } from "./utils/games";
-import { cart } from "./utils/cart";
 
 /// HTML ELEMENTS ///
 
 const newsContainer = document.getElementById("newsContainer");
 const offersContainer = document.getElementById("offersContainer");
 const allProductsContainer = document.getElementById("allProductsContainer");
-const closeCartButton = document.getElementsByClassName("close-button")[0];
-const cartOpener = document.getElementById("cart");
 
 /// METHODS ///
-const updateCartUI = () => {
-  const cartItemsList = document.getElementById('cartItemsList')
-  const cartTotal = document.getElementById('cartTotal')
-  console.log(cartItemsList)
-  console.log(cartTotal)
-
-  cartItemsList.innerHTML = cart.map((product) => {
-    return `<li><img class="product-image-cart" src=${product.image} /> ${product.name} - AR$ ${product.price}</li>`
-  }).join("")
-
-  const total = cart.reduce((acc, product) => acc + parseFloat(product.price), 0)
-  cartTotal.textContent = total.toFixed(3)
-}
-
-const addToCart = (event) => {
-  console.log('Agregue este producto')
-  const productId = parseInt(event.target.dataset.product)
-  const product = games.find((game) => game.id === productId)
-
-  if(product){
-    cart.push(product)
-  }
-  console.log(cart)
-  updateCartUI()
-}
 
 const renderCards = () => {
   newsContainer.innerHTML = games
@@ -67,7 +39,7 @@ const renderCards = () => {
                 </li>
                 <li class="list-group-item mx-1">AR$ ${game.price}</li>
               </ul>
-              <a class="btn btn-card buy-button" data-product="${game.id}">
+              <a class="btn btn-card buy-button" data-game="${game.id}">
                 Comprar
               </a>
               <a href="#" class="btn btn-dark">
@@ -102,7 +74,7 @@ const renderCards = () => {
                 </li>
                 <li class="list-group-item mx-1">AR$ ${game.price}</li>
               </ul>
-              <a class="btn btn-card buy-button" data-product="${game.id}">
+              <a class="btn btn-card buy-button" data-game="${game.id}">
                 Comprar
               </a>
               <a  class="btn btn-dark">
@@ -135,7 +107,7 @@ const renderCards = () => {
         </li>
         <li class="list-group-item mx-1">AR$ ${game.price}</li>
       </ul>
-      <a class="btn btn-card buy-button" data-product="${game.id}">
+      <a class="btn btn-card buy-button" data-game="${game.id}">
         Comprar
       </a>
       <a  class="btn btn-dark">
@@ -146,27 +118,11 @@ const renderCards = () => {
     })
     .join("");
 
-  const buyButtons = document.querySelectorAll('.buy-button')
-  buyButtons.forEach((button) => {
-    button.addEventListener('click', addToCart)
-  })
-};
-
-const closeCartHandler = () => {
-  closeCartButton.addEventListener("click", () => {
-    const cartModal = document.getElementById("cartModal");
-    cartModal.style.display = "none";
-    document.body.style.overflow = "auto";
-  });
-};
-
-const openCartHandler = () => {
-  cartOpener.addEventListener("click", () => {
-    cartModal.style.display = "block";
-    document.body.style.overflow = "hidden";
-  });
+  // const buyButtons = document.querySelectorAll('.buy-button')
+  // buyButtons.forEach((button) => {
+  //   button.addEventListener('click', addToCart)
+  // })
 };
 
 renderCards();
-closeCartHandler();
-openCartHandler();
+localStorage.setItem('games', JSON.stringify(games))
