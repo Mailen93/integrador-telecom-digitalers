@@ -71,6 +71,7 @@ const actualizarCarritoUI = () => {
     totalSpan.innerHTML = sumarProductosCarrito();
   } else {
     cartItemList.innerHTML = `<span>No hay productos en el carrito</span>`;
+    totalSpan.innerHTML = sumarProductosCarrito();
   }
 
   if (!parsedCart || !parsedCart.length) {
