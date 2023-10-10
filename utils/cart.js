@@ -11,6 +11,8 @@ const botonesComprar = document.querySelectorAll(".buy-button");
 
 const botonVaciarCarrito = document.getElementById("vaciarCarritoButton");
 
+const botonFinalizarCompra = document.getElementById('checkoutButton')
+
 // METHODS
 const addUnits = (event) => {
   const addGameId = event.target.dataset.units;

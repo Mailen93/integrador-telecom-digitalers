@@ -32,7 +32,8 @@ const renderCheckOut = () => {
         <p>$ ${game.price}</p>
         <button
           type="button"
-          class="btn btn-danger btn-sm me-1 mb-2"
+          class="eliminar btn btn-danger btn-sm me-1 mb-2"
+          data-game=${game.id}
         >
           <i class="fa-solid fa-trash-can"></i> ELIMINAR
         </button>
@@ -51,4 +52,26 @@ const renderCheckOut = () => {
     })
     .join("");
 };
+
+const eliminarProducto = (event) => {
+  const localCart = JSON.parse(localStorage.getItem('cart'))
+  const deleteButtonID = event.target.dataset.game
+  const gameIndex = localCart.findIndex(localGame => localGame.id === parseInt(deleteButtonID))
+
+  console.log(localCart);
+
+  localCart.slice(gameIndex, 1)
+  localStorage.setItem('cart', JSON.stringify(localCart))
+  console.log(localCart);
+}
+
+const actualizarCheckOutUI = () => {
+
+}
+
+const agregarEventos = () => {
+  const botonesEliminar = document.querySelectorAll('.eliminar')
+  botonesEliminar.forEach(boton => boton.addEventListener('click', eliminarProducto))
+}
 renderCheckOut();
+agregarEventos()
