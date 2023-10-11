@@ -1,3 +1,5 @@
+import Swal from "sweetalert2";
+
 export const cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 // HTML ELEMENTS
@@ -43,7 +45,7 @@ const removeUnits = (event) => {
     actualizarCarritoUI();
 };
 
-const sumarProductosCarrito = () => {
+ const sumarProductosCarrito = () => {
   const localCartart = JSON.parse(localStorage.getItem("cart")) || [];
   const total = localCartart.reduce((acc, game) => {
     return acc + game.price * game.units;
@@ -69,7 +71,7 @@ const actualizarCarritoUI = () => {
           </div></p>
             <p class='subTotal'>Sub: $${game.units < 1 ? '0' : game.units * game.price}</p>
           </li>`
-    );
+    ).join("")
     totalSpan.innerHTML = sumarProductosCarrito();
   } else {
     cartItemList.innerHTML = `<span>No hay productos en el carrito</span>`;
@@ -103,6 +105,14 @@ const agregarProducto = (event) => {
     cartGames.push(game);
   }
 
+  Swal.fire({
+    position: 'top-end',
+    icon: 'success',
+    title: 'Agregado Exitosamente',
+    showConfirmButton: false,
+    timer: 1500
+  })
+  
   localStorage.setItem("cart", JSON.stringify(cartGames));
   actualizarCarritoUI();
 };

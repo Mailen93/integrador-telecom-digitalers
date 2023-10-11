@@ -67,7 +67,7 @@
             </ul>
           </div>
           <div class="d-flex align-items-center">
-            <a href="pages/carrito.html" class="text-reset me-3">
+            <a href="#" class="text-reset me-3">
               <form class="d-flex">
                 <input
                   class="form-control me-2"
@@ -82,16 +82,16 @@
                   ></i>
                 </button></form
             ></a>
-            <a href="pages/carrito.html" class="text-reset me-3"
+            <a href="#" class="text-reset me-3"
               ><i class="fa-solid fa-user fa-lg" style="color: #ffffff"></i
             ></a>
-            <a href="pages/carrito.html" class="text-reset me-3"
+            <a href="#" class="text-reset me-3"
               ><i
                 class="fa-solid fa-heart fa-beat fa-lg"
                 style="color: #ffffff"
               ></i>
             </a>
-            <a href="pages/carrito.html" class="text-reset me-3">
+            <a class="text-reset me-3" id="cart">
               <i
                 class="fa-solid fa-cart-shopping fa-lg"
                 style="color: #ffffff"
@@ -104,6 +104,16 @@
 
     <main>
       <section id="hero">
+        <div id="cartModal" class="modal">
+          <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <ul id="cartItemsList"></ul>
+            <p>Total: $<span id="cartTotal">0</span></p>
+            <a id="checkoutButton" href="./checkout.html">Finalizar Compra</a>
+            <a id="vaciarCarritoButton">Vaciar carrito</a>
+          </div>
+        </div>
         <div class="heroMainContainer">
           <h1 class="heroTitle">
             Porque conservamos el amor por un buen juego de mesa
@@ -249,104 +259,7 @@
     </footer>
 
     <script type="module" src="/nosotros.js"></script>
+    <script type="module" src="../utils/cart.js"></script>
+
   </body>
 </html>
-
-<!-- 
-
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <title>Proyecto Integrador - Etapa 1 (Nosostros)</title>
-    <script type="module" crossorigin src="/assets/carrito-3cd92934.js"></script>
-    <link rel="stylesheet" href="/assets/carrito-7100db76.css">
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Tienda EIT</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="../index.html"
-                  >Inicio</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contacto.html">Contacto</a>
-              </li>
-            </ul>
-          </div>
-          <div class="d-flex">
-            <a href="carrito.html" class="text-reset me-3">
-              <i class="fa-solid fa-cart-shopping"></i>
-            </a>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <main class="container nosotros">
-      <div class="row">
-        <div class="col-7">
-          <h1 class="titulo-destacado">Sobre <span>nosotros</span></h1>
-          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste
-            obcaecati harum fugiat, eius possimus animi adipisci velit non
-            similique dolorem.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-            ipsa, corrupti nam eveniet odit excepturi adipisci provident. Iusto,
-            fugit doloremque.
-          </p>
-          <div class="nosotros-iconos">
-            <ul>
-                <li><a href="https://facebook.com"><i class="fb fa-brands fa-facebook-square fa-3x"></i></a></li>
-                <li><a href="https://twitter.com"><i class="tw fa-brands fa-twitter-square fa-3x"></i></a></li>
-                <li><a href="https://instagram.com"><i class="ig fa-brands fa-instagram-square fa-3x"></i></a></li>
-                <li><a href="mailto:m.labarrere2@gmail.com"><i class="fa-solid fa-envelope-square fa-3x"></i></a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-5">
-          <div class="nosotros-imagen">
-            <img
-              class="img-fluid"
-              src="/assets/sean-stratton-ObpCE_X3j6U-unsplash-a3de3d22.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-    </main>
-
-    
-  </body>
-</html> -->
