@@ -3,8 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 /* Archivos de proyecto*/
-import "./css/style.css";
-import { values } from "./utils/values";
+import "../css/style.css";
+import { values } from "./values";
 
 const valuesWrapper = document.getElementById("valuesWrapper");
 

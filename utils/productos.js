@@ -3,8 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 /* Archivos de proyecto*/
-import "./css/style.css";
-import { games } from "./utils/games";
+import "../css/style.css";
+import { games } from "./games";
 
 /// HTML ELEMENTS ///
 
